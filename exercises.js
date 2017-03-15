@@ -21,9 +21,6 @@ function greeting(language) {
 		case 'German':
 			ans = 'Guten Tag!';
 			break;
-		case 'English':
-			ans = 'Hello!';
-			break;
 		case 'Spanish':
 			ans = 'Hola!';
 			break;
