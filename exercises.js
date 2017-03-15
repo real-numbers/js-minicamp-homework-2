@@ -33,21 +33,14 @@ function greeting(language) {
 function isTenOrFive(num) {
   //return true if num is 10 or 5
   //otherwise return false
-  if (num==10||num==5) {
-	return true;
-  } else {
-	return false;
+  return (num==10||num==5);
   }
-}
 
 function isInRange(num) {
   //return true if num is less than 50 and greater than 20
-	if (num>20 && num<50) {
-		return true;
-	} else {
-		return false;
+	return (num>20 && num<50);
 	}
-}
+
 
 function isInteger(num) {
   //return true if num is an integer
@@ -56,12 +49,9 @@ function isInteger(num) {
   //-10 -> true
   //otherwise return false
   //hint: you can solve this using Math.floor
-	if (Math.floor(num)==Math.ceil(num)) {
-		return true;
-	} else {
-		return false;
+	return (Math.floor(num)==Math.ceil(num));
 	} 
-}
+
 
 function fizzBuzz(num) {
   //if num is divisible by 3 return 'fizz'
@@ -149,9 +139,7 @@ function contains(arr, item) {
   //check to see if item is inside of arr
   //return true if it is, otherwise return false
 for (var i = 0; i < arr.length; i++) {
-        if (arr[i] === item) {
-            return true;
-        }
+        return (arr[i] === item);
     }
     return false;
 }
