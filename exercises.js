@@ -78,7 +78,7 @@ function isPrime(num) {
 	if(!(isInteger(num))||(num<2)){
 		return false;
 		} else {
-			for (var i=2 ; i<=Math.sqrt(num); i++) {
+			for (var i=2 ; i<=Math.sqrt(num); i=i+2) {
 				if (num%i===0) {
 					return false;
 				}
