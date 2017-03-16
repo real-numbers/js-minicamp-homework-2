@@ -75,15 +75,20 @@ function isPrime(num) {
   // hint: a prime number is only evenly divisible by itself and 1
   // hint2: you can solve this using a for loop
   // note: 0 and 1 are NOT considered prime numbers
-	if(!(isInteger(num))||(num<2)){
+	if ((!(isInteger(num)))|| num <=1) {
 		return false;
 		} else {
-			for (var i=2 ; i<=Math.sqrt(num); i=i+2) {
-				if (num%i===0) {
-					return false;
-				}
+			if (num<=3) {
+				return true;
+		} else if (num%2===0||num%3===0) {
+			return false;
 		}
-	}
+		}		
+		for (var i=5; i*i<=num; i=i+2) {
+			if (num%i===0) {
+				return false;
+			}
+		}
 return true;
 }
 
