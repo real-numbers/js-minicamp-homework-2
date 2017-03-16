@@ -33,7 +33,7 @@ function greeting(language) {
 function isTenOrFive(num) {
   //return true if num is 10 or 5
   //otherwise return false
-  return (num==10||num==5);
+  return (num===10||num===5);
   }
 
 function isInRange(num) {
@@ -49,7 +49,7 @@ function isInteger(num) {
   //-10 -> true
   //otherwise return false
   //hint: you can solve this using Math.floor
-	return (Math.floor(num)==Math.ceil(num));
+	return (Math.floor(num)===Math.ceil(num));
 	} 
 
 
@@ -79,7 +79,7 @@ function isPrime(num) {
 		return false;
 		} else {
 			for (var i=2 ; i<=Math.sqrt(num); i++) {
-				if (num%i==0) {
+				if (num%i===0) {
 					return false;
 				}
 		}
